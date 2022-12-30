@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<header>
+    <h1>Agenda Telefônica</h1>
+</header>
+
+<div class="container">
+    <div class="agendaContainer">
+        <h3>Agenda</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+            </tr>
+            </thead>
+            <tbody id="idTbody">
+            <tr>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="formularioContainer">
+        <form id="idForm">
+            <div class="formularioTitle">
+                <h3>Adicionar contato</h3>
+                <button type="submit">+</button>
+            </div>
+            <p>Nome Completo:</p>
+            <input id="idNome" type="text" required/>
+            <span id="idCampoNome" class="campoObrigatorio">Digite seu nome completo</span>
+            <p>Telefone:</p>
+            <input id="idTelefone" type="number" required/>
+            <span id="idCampoTel" class="campoObrigatorio">Digite seu telefone</span>
+        </form>
+        <div id="alertaAdicionado" class="adicionado">
+            <span>Adicionado!</span>
+        </div>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
